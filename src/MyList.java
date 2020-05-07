@@ -25,13 +25,15 @@ public class MyList<E> {
     }
 
     public E remove(int index) {
+        E temp = (E) elements[index];
         while (index < elements.length - 1) {
             elements[index] = elements[index + 1];
             index++;
         }
+
         elements[size] = null;
         size--;
-        return null;
+        return temp;
     }
 
     public int size() {

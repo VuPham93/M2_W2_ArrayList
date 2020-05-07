@@ -49,8 +49,8 @@ public class MyListTest {
         System.out.print("\n" + "Index of find value = " + myList.indexOf(findValue));
 
         int index = 2;
-        myList.remove(index);
-        System.out.println("\n" + "Remove object at position " + index);
+
+        System.out.println("\n" + "Remove object at position " + index +": " + myList.remove(index));
         System.out.print("Array list 2: " );
         for (int i = 0; i < myList.size(); i++) {
             System.out.print("\t" + myList.get(i));
